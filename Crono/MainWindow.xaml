@@ -1,0 +1,17 @@
+﻿<dx:ThemedWindow 
+    x:Class="Crono.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    Title="Crono" Height="479" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="173*"/>
+            <ColumnDefinition Width="828*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="bIniciar" Content="Start" HorizontalAlignment="Left" Height="76" Margin="36,316,0,0" VerticalAlignment="Top" Width="186" Click="bIniciar_Click" Grid.Column="1"/>
+        <Button x:Name="bPausar" Content="Pause" HorizontalAlignment="Left" Height="76" Margin="226,316,0,0" VerticalAlignment="Top" Width="186" Click="bPausar_Click" Grid.Column="1"/>
+        <Button x:Name="bParar" Content="Stop" HorizontalAlignment="Left" Height="76" Margin="418,316,0,0" VerticalAlignment="Top" Width="186" Click="bParar_Click" Grid.Column="1"/>
+        <TextBox x:Name="tTimer" HorizontalAlignment="Left" Height="123" Margin="36,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="568" TextAlignment="Center" FontSize="48" Grid.Column="1"/>
+    </Grid>
+</dx:ThemedWindow>
